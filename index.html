@@ -43,8 +43,9 @@
             </div>
             <div class="news-info">
               <h5>Messi</h5>
+              <p id="player-1" class="hidden-name">1. Lionel Messi</p>
               <p>750 Goals . 474 Assist</p>
-              <button id="button" class="btn">Select</button>
+              <button id="btn-messi" onclick="(this);this.disabled=true;" class="btn">Select</button>
             </div>
           </div>
           <div class="news max-height">
@@ -53,8 +54,9 @@
             </div>
             <div class="news-info">
               <h5>Ronaldo</h5>
+              <p id="player-2" class="hidden-name">2. Cristiano Ronaldo</p>
               <p>36 Goals . 120 Assist</p>
-              <button class="btn">Select</button>
+              <button id="btn-ronaldo" onclick="(this);this.disabled=true;" class="btn">Select</button>
             </div>
           </div>
           <div class="news max-height">
@@ -68,7 +70,7 @@
             </div>
           </div>
           <div class="news">
-            <div class="player-show">
+            <div id="sellected-players" class="player-show">
               <h4>Selected players</h4>
             </div>
           </div>
