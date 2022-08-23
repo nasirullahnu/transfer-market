@@ -20,7 +20,7 @@ document.getElementById('calculate-players').addEventListener('click', function 
         alert ('কমপক্ষে একজন খেলোয়ার নির্বাচন করুন');
     }
     else if(perPlayerBudget <= 0 ){
-        alert('you have select player amount')
+        alert('please select any player amount')
     }
     totalCostShowField.innerText = totalBudget;
 })
