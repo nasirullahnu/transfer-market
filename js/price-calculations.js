@@ -5,6 +5,7 @@ function getInputFieldValueById(inputFieldId){
     return eheeValue;
 }
 
+// players calculate button 
 document.getElementById('calculate-players').addEventListener('click', function () {
     const playersLength = document.querySelectorAll('#sellected-players li')
     const playerNumbers =  playersLength.length;
@@ -18,10 +19,36 @@ document.getElementById('calculate-players').addEventListener('click', function 
     if(playerNumber === 0){
         alert ('কমপক্ষে একজন খেলোয়ার নির্বাচন করুন');
     }
-    else if(totalBudget <= 1000 ){
-        alert('you have to spent more then 1000 Taka for buy players')
+    else if(perPlayerBudget <= 0 ){
+        alert('you have select player amount')
     }
     totalCostShowField.innerText = totalBudget;
 })
 
+// total calculate button 
+document.getElementById('calculate-total').addEventListener('click', function(){
+    const managerCost = getInputFieldValueById('manager');
+    const managerCostFinal = parseFloat(managerCost);
 
+    const coachCost = getInputFieldValueById('coach');
+    const coachCostFinal = parseFloat(coachCost);
+
+    const playerCost = document.getElementById('player-total');
+    const playerCostAll = playerCost.innerText;
+    const playerCostAllFinal = parseFloat(playerCostAll)
+    
+    const finalCost = managerCostFinal + coachCostFinal + playerCostAllFinal;
+    
+    const totalBudget = document.getElementById('total-budget')
+    if(managerCost <= 0){
+        alert('enter manager amount')
+        return;
+    }
+    else if(coachCost <= 0 ){
+        alert('enter coach amount')
+        return;
+    }
+    totalBudget.innerText = finalCost;
+
+    
+})
