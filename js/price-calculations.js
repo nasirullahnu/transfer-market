@@ -49,6 +49,4 @@ document.getElementById('calculate-total').addEventListener('click', function(){
         return;
     }
     totalBudget.innerText = finalCost;
-
-    
 })
