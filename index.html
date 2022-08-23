@@ -71,8 +71,11 @@
             </div>
           </div>
           <div class="news">
-            <div id="sellected-players" class="player-show">
+            <div class="player-show">
               <h4>Selected players</h4>
+              <ol id="sellected-players">
+
+              </ol>
             </div>
           </div>
           <div class="news max-height">
@@ -110,13 +113,17 @@
           </div>
           <div class="news">
             <div class="player-show">
-              <h3>Budget</h3> <hr>
+              <h3>Budget</h3>
+              <hr>
               <div class="hellllo">
                 <p>Per Player</p>
                 <input class="block" type="text">
               </div>
               <button class="btn">calculate players</button>
-              <p>Player Expenses:   $5000</p>
+              <div class="total">
+                <p>Player Exprence:</p>
+                <p>$ <span>00</span></p>
+              </div>
               <div class="hellllo">
                 <p>Manager</p>
                 <input class="block" type="text">
@@ -142,7 +149,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
-    <script src="js/players.js"></script>
+  <script src="js/players.js"></script>
 </body>
 
 </html>

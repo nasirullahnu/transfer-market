@@ -1,76 +1,109 @@
-
-<section>
-    <div class="container overflow-hidden text-center mt-5">
-      <div class="row gx-5">
-        <div class="col-lg-9 bg-light">
-          <div class="row">
-            <div class="col-lg-3 mx-auto">
-              <div class="card" style="width: 18rem;">
-                <img src="images/player-1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 mx-auto">
-              <div class="card" style="width: 18rem;">
-                <img src="images/player-2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 mx-auto">
-              <div class="card" style="width: 18rem;">
-                <img src="images/player-3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 mx-auto">
-              <div class="card" style="width: 18rem;">
-                <img src="images/player-3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            
-          </div>
+<section class="container">
+  <div class="middle">
+    <div id="select-buttons" class="all-news">
+      <div class="news max-height">
+        <div class="newsimage">
+          <img src="images/player-1.png" alt="player image">
         </div>
-        <div class="col">
-          <div class="p-3 border bg-light">Custom column padding</div>
+        <div class="news-info">
+          <h5>Messi</h5>
+          <p id="player-1" class="hidden-name">Lionel Messi</p>
+          <p>750 Goals . 474 Assist</p>
+          <button id="btn-messi" class="btn">Select</button>
+        </div>
+      </div>
+      <div class="news max-height">
+        <div class="newsimage">
+          <img src="images/player-2.png" alt="player image">
+        </div>
+        <div class="news-info">
+          <h5>Ronaldo</h5>
+          <p id="player-2" class="hidden-name">Cristiano Ronaldo</p>
+          <p>36 Goals . 120 Assist</p>
+          <button id="btn-ronaldo" onclick="(this);this.disabled=true;" class="btn">Select</button>
+        </div>
+      </div>
+      <div class="news max-height">
+        <div class="newsimage">
+          <img src="images/player-3.png" alt="player image">
+        </div>
+        <div class="news-info">
+          <h5>Neymar</h5>
+          <p id="player-3" class="hidden-name">Neymar Jr.</p>
+          <p>36 Goals . 120 Assist</p>
+          <button id="btn-neymar" onclick="(this);this.disabled=true;" class="btn">Select</button>
+        </div>
+      </div>
+      <div class="news">
+        <div class="player-show">
+          <h4>Selected players</h4>
+          <ol id="sellected-players">
+
+          </ol>
+        </div>
+      </div>
+      <div class="news max-height">
+        <div class="newsimage">
+          <img src="images/player-4.png" alt="player image">
+        </div>
+        <div class="news-info">
+          <h5>Maria</h5>
+          <p id="player-4" class="hidden-name">Di Maria</p>
+          <p>36 Goals . 120 Assist</p>
+          <button id="btn-maria" onclick="(this);this.disabled=true;" class="btn">Select</button>
+        </div>
+      </div>
+      <div class="news max-height">
+        <div class="newsimage">
+          <img src="images/player-5.png" alt="player image">
+        </div>
+        <div class="news-info">
+          <h5>Alves</h5>
+          <p id="player-5" class="hidden-name">Dani Alves</p>
+          <p>36 Goals . 120 Assist</p>
+          <button id="btn-alves" onclick="(this);this.disabled=true;" class="btn">Select</button>
+        </div>
+      </div>
+      <div class="news max-height">
+        <div class="newsimage">
+          <img src="images/player-6.png" alt="player image">
+        </div>
+        <div class="news-info">
+          <h5>Kaka</h5>
+          <p id="player-6" class="hidden-name">Ricardo Kaka</p>
+          <p>36 Goals . 120 Assist</p>
+          <button id="btn-kaka" onclick="(this);this.disabled=true;" class="btn">Select</button>
+        </div>
+      </div>
+      <div class="news">
+        <div class="player-show">
+          <h3>Budget</h3>
+          <hr>
+          <div class="hellllo">
+            <p>Per Player</p>
+            <input class="block" type="text">
+          </div>
+          <button class="btn">calculate players</button>
+          <div class="total">
+            <p>Player Exprence:</p>
+            <p>$ <span>00</span></p>
+          </div>
+          <div class="hellllo">
+            <p>Manager</p>
+            <input class="block" type="text">
+          </div>
+          <div class="hellllo">
+            <p>Coach</p>
+            <input class="block" type="text">
+          </div>
+          <button class="btn">calculate total</button>
+          <div class="total">
+            <p>Total</p>
+            <p>$ <span>00</span></p>
+          </div>
+
         </div>
       </div>
     </div>
-  </section>
-
-
-
-
-
-
-
-
-
-  <div class="newsimage">
-    <img src="images/player-1.png" alt="player image">
   </div>
-  <div class="news-info">
-    <a href="">Transfer</a>
-    <p>Transfer Live: Chlesea in talks over Kimpenbe transfer</p>
-    <div class="post-reactions">
-      <p><i class="fa-regular fa-clock"></i> 10h</p>
-      <p class="different"><i class="fa-regular fa-message"></i> 50</p>
-
-    </div>
-  </div>
+</section>
